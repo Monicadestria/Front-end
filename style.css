@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background: white;
+}
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background: url(banner3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1{
+  color: orange;
+  font-size: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+  background: #e46414;
+}
+
+header.sticky{
+  background: transparent;
+  padding: 15px 100px;
+}
+
+header .logo img{
+  width: 120px;
+  height: 45px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+body {
+  background: white;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  min-width: 15em;
+  position: relative;
+  margin: 2em;
+}
+
+.showing-container {
+  display: flex;
+  align-items: center;
+}
+
+.showing-container h2 {
+  margin-right: 30em;
+  font-size: medium;
+}
+
+
+.select {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px orange solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select-clicked {
+  border: 2px orange solid;
+  box-shadow: 0 0 0.8em orange;
+}
+
+.select:hover {
+  background: rgb(232, 196, 128);
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid orange;
+  transition: 0.3s;
+}
+
+.caret-rotates {
+  transform: rotate(180deg);
+}
+
+
+.menu-dropdown {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: rgb(232, 196, 128);
+  border: 1px white solid;
+  box-shadow: 0 0.5em 1em orange;
+  border-radius: 0.5em;
+  color: black;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu-dropdown li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.menu-dropdown li:hover {
+  background: rgb(245, 185, 74);
+}
+
+.menu-dropdown-open {
+  display: block;
+  opacity: 1;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 10px;
+}
+
+.card-list .card-item {
+  background: #fff;
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+  border: 2px solid #000;
+}
+
+.card-list .card-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-list span {
+  display: inline-block;
+  background: rgb(237, 197, 121);
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  color: white;
+}
+
+.card-list .card-item h3 {
+  color: #000;
+  font-size: 1.2rem;
+  margin-top: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1200px) {
+  .card-list .card-item {
+      padding: 15px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .card-list {
+      margin: 0 auto;
+  }
+}
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #e46414;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}

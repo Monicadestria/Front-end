@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suitmedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="logo"><img src="logo1.png"></a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Ideas</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+    <section class="section-main">
+      <h1>Ideas</h1>
+    </section>
+
+    <div class="dropdown">
+      <div class="showing-container">
+        <h2>Showing 1 - 10 of 100</h2>
+        <div class="select">
+          <span class="selected">Show per page</span>
+          <div class="caret"></div>
+        </div>
+      </div>
+      <ul class="menu-dropdown">
+        <li>10</li>
+        <li>20</li>
+        <li>50</li>
+      </ul>
+    </div>
+    
+    <div class="dropdown">
+      <div class="select">
+        <span class="selected">Sort by</span>
+        <div class="caret"></div>
+      </div>
+      <ul class="menu-dropdown">
+        <li>Newest</li>
+        <li>Oldest</li>
+      </ul>
+    </div>
+    
+  <script src="script.js"></script>
+
+    <div class="card-list">
+      <a href="#" class="card-item">
+          <img src="assets 3.jpg" alt="Card Image">
+          <span class="date">1 September 2023</span>
+          <h3>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</h3>
+      </a>
+      <a href="#" class="card-item">
+          <img src="assets 4.jpg" alt="Card Image">
+          <span class="date">1 September 2023</span>
+          <h3>Jangan Asal Pilih Influencer, berikut cara menyusun strategi influencer yang dapat dicobtoh dengan baik</h3>
+      </a>
+      <a href="#" class="card-item">
+        <img src="assets 5.jpg" alt="Card Image"> <!-- Corrected image source -->
+        <span class="date">1 September 2023</span>
+        <h3>kenali tingkatan influencer berdasrkan jumlah Followers</h3>
+      </a>
+      <a href="#" class="card-item">
+        <img src="assets 6.jpg" alt="Card Image"> <!-- Corrected image source -->
+        <span class="date">1 September 2023</span>
+        <h3>Jangan Asal Pilih Influencer, berikut cara menyusun strategi influencer yang dapat dicobtoh dengan baik</h3>
+      </a>
+      <a href="#" class="card-item">
+        <img src="assets 3.jpg" alt="Card Image">
+        <span class="date">1 September 2023</span>
+        <h3>Kenali Tingkatan Influencers berdasarkan Jumlah Followers</h3>
+    </a>
+    <a href="#" class="card-item">
+        <img src="assets 4.jpg" alt="Card Image">
+        <span class="date">1 September 2023</span>
+        <h3>Jangan Asal Pilih Influencer, berikut cara menyusun strategi influencer yang dapat dicobtoh dengan baik</h3>
+    </a>
+    <a href="#" class="card-item">
+      <img src="assets 5.jpg" alt="Card Image"> <!-- Corrected image source -->
+      <span class="date">1 September 2023</span>
+      <h3>kenali tingkatan influencer berdasrkan jumlah Followers</h3>
+    </a>
+    <a href="#" class="card-item">
+      <img src="assets 6.jpg" alt="Card Image"> <!-- Corrected image source -->
+      <span class="date">1 September 2023</span>
+      <h3>Jangan Asal Pilih Influencer, berikut cara menyusun strategi influencer yang dapat dicobtoh dengan baik</h3>
+    </a>
+    </div>
+  </div>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+  </body>
+</html>
